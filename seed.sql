@@ -8,3 +8,6 @@ INSERT or IGNORE INTO MyWebsite(id, myWebId, websiteName, [url]) VALUES (2, 1, '
 INSERT or IGNORE INTO MyWebsite(id, myWebId, websiteName, [url]) VALUES (3, 2, 'Stackoverflow', 'https://stackoverflow.com');
 INSERT or IGNORE INTO MyWebsite(id, myWebId, websiteName, [url]) VALUES (4, 2, 'Educative io', 'https://educative.io');
 INSERT or IGNORE INTO MyWebsite(id, myWebId, websiteName, [url]) VALUES (5, 2, 'Cloudinary', 'https://cloudinary.com');
+
+CREATE TABLE IF NOT EXISTS Bookmarks(id INTEGER PRIMARY KEY AUTOINCREMENT, pageTitle TEXT, pageUrl TEXT);
+INSERT or IGNORE INTO Bookmarks VALUES (1, 'Test Bookmark', "https://google.com");
